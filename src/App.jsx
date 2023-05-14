@@ -16,9 +16,7 @@ function App() {
   signOut(auth)
   return (
     <>
-
-
-      <HashRouter>
+      <HashRouter >
         <Navbar />
 
         <Routes>
