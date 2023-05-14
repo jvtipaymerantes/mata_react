@@ -1,0 +1,960 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0%;
+    position: fixed;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    height: 10%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    margin-right: 80px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.navbtn {
+    font-size: 15px;
+}
+
+*/ #header.header-scrolled {
+    background: #202020;
+    height: 60px;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    /* add a relative position to the parent element */
+    height: 67vh;
+    background-image: url("/public/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* new bcg section */
+.indexbcg {
+    position: relative;
+    /* add a relative position to the parent element */
+    height: 100vh;
+    background-image: url("/public/indexbg.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* add a semi-transparent background color */
+}
+
+.hero-content {
+    position: relative;
+    /* add a relative position to the child element */
+    z-index: 1;
+    /* add a higher z-index to the child element to make it appear in front of the overlay */
+    text-align: center;
+    font: Montserrat bold;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.center-text {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about-us {
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Services Section */
+.services {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.services ul {
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.services li {
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-us {
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+.contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    text-align: left;
+
+}
+
+.highlight {
+    color: yellow;
+}
+
+.navbar {
+    background: #202020;
+    align-items: center;
+    padding: 0px
+}
+
+.logo img {
+    width: 4%;
+    height: 4%;
+    margin-left: 80px;
+}
+
+nav {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex: 1;
+}
+
+.nav-links li {
+    margin: 0 1em;
+}
+
+#my-video {
+    width: 100%;
+    height: 50%;
+}
+
+/*--------------------------------------------------------------
+  # Our Services
+  --------------------------------------------------------------*/
+.services {
+    padding-bottom: 20px;
+}
+
+.services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+    background: #202020;
+    box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    color: white;
+    border: 2px solid #fff;
+    border-radius: 20px 20px;
+}
+
+.services .icon {
+    margin: 0 auto 20px auto;
+    padding-top: 17px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+}
+
+.services .icon i {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.services .title a {
+    color: #fff9f9;
+}
+
+.services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.services .icon-box-pink .icon {
+    background: #fceef3;
+}
+
+.services .icon-box-cyan .icon {
+    background: #e6fdfc;
+}
+
+.services .icon-box-green .icon {
+    background: #eafde7;
+}
+
+
+.services .icon-box-blue .icon {
+    background: #e1eeff;
+}
+
+/**.why-us .container {
+    box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+    background: #fff;
+  }
+  /* Footer */
+
+#footer {
+    background: #202020;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+#footer .footer-newsletter {
+    padding: 50px 0;
+    background: #0d2735;
+}
+
+#footer .footer-newsletter h4 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    color: #a2cce3;
+}
+
+#footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+}
+
+#footer .footer-newsletter form input[type=email] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    margin: 3px;
+    background: #68A4C4;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+#footer .footer-newsletter form input[type=submit]:hover {
+    background: #468db3;
+}
+
+#footer .footer-top {
+    background: #202020;
+    border-top: 1px solid #17455e;
+    border-bottom: 1px solid #123649;
+    padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    color: #a2cce3;
+    font-weight: 600;
+}
+
+#footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #1e4356;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+    background: #68A4C4;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .footer-top h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #a2cce3;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #a2cce3;
+    font-size: 18px;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    color: #a2cce3;
+}
+
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact p {
+    line-height: 26px;
+}
+
+#footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+}
+
+#footer .credits a {
+    color: #a2cce3;
+}
+
+
+/* Mission and Vision */
+
+/*.background-image {
+    position: relative;
+    background-image: url("../img/homepage-3.png");
+    background-size: cover;
+    height: 500px;
+  }
+  */
+
+.background-image1 {
+    position: relative;
+    background-image: url("../img/indexbg.jpg");
+    background-size: cover;
+    height: 500px;
+
+    position: relative;
+    /* add a relative position to the child element */
+    z-index: 1;
+    /* add a higher z-index to the child element to make it appear in front of the overlay */
+    text-align: left;
+    font: Montserrat bold;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    margin-top: 0%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.overlay2 {
+    position: absolute;
+    margin-top: 83%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+
+.background-image {
+    background-image: url("/public/homepage-3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+  } */
+
+.h1 {
+    position: relative;
+    z-index: 5;
+    color: white;
+    text-align: center;
+}
+
+.left-column {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+.right-column {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    float: right;
+    width: 50%;
+}
+
+/* Introducing MATA */
+
+.image-text-section {
+    background-color: #f8f8f8;
+    padding: 100px 0;
+}
+
+.image-text-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.image-text-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.image-text-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*--------------------------------------------------------------
+  # Team
+  --------------------------------------------------------------*/
+.team {
+    background: #fff;
+    padding-bottom: 30px;
+}
+
+.team .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.team .member .member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    right: 0;
+    height: 40px;
+    opacity: 0;
+    transition: bottom ease-in-out 0.4s;
+    text-align: center;
+    background: rgba(30, 67, 86, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .member .social a {
+    transition: color 0.3s;
+    color: #fff;
+    margin: 0 12px;
+    display: inline-block;
+}
+
+.team .member .social a:hover {
+    color: #68A4C4;
+}
+
+.team .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.team .member .member-info h4 {
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+    font-size: 18px;
+}
+
+.team .member .member-info span {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.team .member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+}
+
+.team .member:hover .social {
+    bottom: 0;
+    opacity: 1;
+    transition: bottom ease-in-out 0.4s;
+}
+
+.team .member:hover .social a,
+.team .member:hover .social i {
+    line-height: 0;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: 'Alex Brush';
+    src: url('src/assets/vendor/font/alexbrush.ttf') format('truetype');
+}
+
+.teamheader {
+    font-family: 'Arial Black', cursive;
+}
+
+
+
+/*--------------------------------------------------------------
+  # Breadcrumbs
+  --------------------------------------------------------------*/
+.breadcrumbs {
+    padding: 15px 0;
+    background-color: #f3f8fa;
+    min-height: 40px;
+}
+
+.breadcrumbs h2 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs ol li+li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6c757d;
+    content: "/";
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+
+    .breadcrumbs ol {
+        display: block;
+    }
+
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}
+
+/*--------------------------------------------------------------
+  # Team
+  --------------------------------------------------------------*/
+.team {
+    background: #fff;
+    padding-bottom: 30px;
+}
+
+.team .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.team .member .member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    right: 0;
+    height: 40px;
+    opacity: 0;
+    transition: bottom ease-in-out 0.4s;
+    text-align: center;
+    background: rgba(30, 67, 86, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .member .social a {
+    transition: color 0.3s;
+    color: #fff;
+    margin: 0 12px;
+    display: inline-block;
+}
+
+.team .member .social a:hover {
+    color: #68A4C4;
+}
+
+.team .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.team .member .member-info h4 {
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+    font-size: 18px;
+}
+
+.team .member .member-info span {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.team .member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+}
+
+.team .member:hover .social {
+    bottom: 0;
+    opacity: 1;
+    transition: bottom ease-in-out 0.4s;
+}
+
+.team .member:hover .social a,
+.team .member:hover .social i {
+    line-height: 0;
+    font-size: 18px;
+}
+
+.img-fluid {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.fixed-image {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9998;
+}
+
+.close-button {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+
+/* nav bar ko to  =*/
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+
+form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/*
+      h1 {
+        text-align: center;
+      }
+      */
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.teamheader {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
