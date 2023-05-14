@@ -20,10 +20,10 @@ function App() {
 
       <Router>
         <Routes>
-          <Route path="/home" element={<Home />}></Route>
-          <Route path="/register" element={<Register />}></Route>
-          <Route path="/about"  element={<About/>}></Route>
-          <Route path="/team" element={<Team/>}></Route>
+          <Route path="./pages/home" element={<Home />}></Route>
+          <Route path="./pages/register" element={<Register />}></Route>
+          <Route path="./pages/about"  element={<About/>}></Route>
+          <Route path="./pages/team" element={<Team/>}></Route>
         </Routes>
       </Router>
 
