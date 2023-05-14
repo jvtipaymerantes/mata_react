@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { auth } from './firebase'
 import { signOut } from 'firebase/auth'
 import './App.css'
@@ -18,14 +18,14 @@ function App() {
     <>                                                         
       <Navbar />
 
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/register" element={<Register />}></Route>
           <Route path="/about"  element={<About/>}></Route>
           <Route path="/team" element={<Team/>}></Route>
         </Routes>
-      </Router>
+      </HashRouter>
 
 
       <Footer />
