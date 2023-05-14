@@ -15,20 +15,24 @@ import Team from './pages/Team'
 function App() {
   signOut(auth)
   return (
-    <>                                                         
-      <Navbar />
+    <>
+
 
       <HashRouter>
+        <Navbar />
+
         <Routes>
-          <Route path="/home" element={<Home />}></Route>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/register" element={<Register />}></Route>
-          <Route path="/about"  element={<About/>}></Route>
-          <Route path="/team" element={<Team/>}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/team" element={<Team />}></Route>
         </Routes>
+
+        <Footer />
       </HashRouter>
 
 
-      <Footer />
+
     </>
   )
 }
