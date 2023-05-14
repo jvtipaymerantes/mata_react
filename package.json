@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https//drcutis.me/mata_react/",
+  "homepage": "https//jvtipaymerantes.github.io/mata_react/",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
